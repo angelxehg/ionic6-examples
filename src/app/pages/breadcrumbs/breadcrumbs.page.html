@@ -5,5 +5,282 @@
 </ion-header>
 
 <ion-content>
-
+  <!-- Default -->
+  <ion-list-header>
+    <ion-label>Default:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="#">
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Electronics
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#photography">
+      Photography
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">
+      Cameras
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#film">
+      Film
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      35 mm
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Colors -->
+  <ion-list-header>
+    <ion-label>Colors:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs color="secondary">
+    <ion-breadcrumb href="#">
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Electronics
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#photography">
+      Photography
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">
+      Cameras
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#film">
+      Film
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      35 mm
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Icon start -->
+  <ion-list-header>
+    <ion-label>Icon start:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="#">
+      <ion-icon slot="start" name="home"></ion-icon>
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#files">
+      <ion-icon slot="start" name="folder"></ion-icon>
+      Files
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#projects">
+      <ion-icon slot="start" name="folder"></ion-icon>
+      Projects
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#user-research">
+      <ion-icon slot="start" name="folder"></ion-icon>
+      User Research
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      <ion-icon slot="start" name="document"></ion-icon>
+      Survey.txt
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Icon end -->
+  <ion-list-header>
+    <ion-label>Icon end:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="#">
+      Home
+      <ion-icon slot="end" name="home"></ion-icon>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#files">
+      Files
+      <ion-icon slot="end" name="folder"></ion-icon>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#projects">
+      Projects
+      <ion-icon slot="end" name="folder"></ion-icon>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#user-research">
+      User Research
+      <ion-icon slot="end" name="folder"></ion-icon>
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      Survey.txt
+      <ion-icon slot="end" name="document"></ion-icon>
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Custom separator text -->
+  <ion-list-header>
+    <ion-label>Custom separator text:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="#">
+      Home
+      <span slot="separator">|</span>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Electronics
+      <span slot="separator">|</span>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#photography">
+      Photography
+      <span slot="separator">|</span>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">
+      Cameras
+      <span slot="separator">|</span>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#film">
+      Film
+      <span slot="separator">|</span>
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      35 mm
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Custom separator icon -->
+  <ion-list-header>
+    <ion-label>Custom separator icon:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="#">
+      Home
+      <ion-icon slot="separator" name="arrow-forward"></ion-icon>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Electronics
+      <ion-icon slot="separator" name="arrow-forward"></ion-icon>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#photography">
+      Photography
+      <ion-icon slot="separator" name="arrow-forward"></ion-icon>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">
+      Cameras
+      <ion-icon slot="separator" name="arrow-forward"></ion-icon>
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#film">
+      Film
+      <ion-icon slot="separator" name="arrow-forward"></ion-icon>
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      35 mm
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Max Items -->
+  <ion-list-header>
+    <ion-label>Max Items:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs [maxItems]="4">
+    <ion-breadcrumb href="#">
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Electronics
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#photography">
+      Photography
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">
+      Cameras
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#film">
+      Film
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      35 mm
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Items before collapse -->
+  <ion-list-header>
+    <ion-label>Items before collapse:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs [maxItems]="4" [itemsBeforeCollapse]="2">
+    <ion-breadcrumb href="#">
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Electronics
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#photography">
+      Photography
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">
+      Cameras
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#film">
+      Film
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      35 mm
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Items after collapse -->
+  <ion-list-header>
+    <ion-label>Items after collapse:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs [maxItems]="4" [itemsAfterCollapse]="3">
+    <ion-breadcrumb href="#">
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Electronics
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#photography">
+      Photography
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">
+      Cameras
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#film">
+      Film
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      35 mm
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Items before and after collapse -->
+  <ion-list-header>
+    <ion-label>Items before and after collapse:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs [maxItems]="4" [itemsBeforeCollapse]="0" [itemsAfterCollapse]="3">
+    <ion-breadcrumb href="#">
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Electronics
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#photography">
+      Photography
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">
+      Cameras
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#film">
+      Film
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      35 mm
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
+  <!-- Expand on Collapsed Indicator Click -->
+  <ion-list-header>
+    <ion-label>Expand on Collapsed Indicator Click:</ion-label>
+  </ion-list-header>
+  <ion-breadcrumbs [maxItems]="maxBreadcrumbs" (ionCollapsedClick)="expandBreadcrumbs()">
+    <ion-breadcrumb href="#">
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Electronics
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#photography">
+      Photography
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">
+      Cameras
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#film">
+      Film
+    </ion-breadcrumb>
+    <ion-breadcrumb>
+      35 mm
+    </ion-breadcrumb>
+  </ion-breadcrumbs>
 </ion-content>

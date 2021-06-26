@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumbsPage implements OnInit {
 
+  maxBreadcrumbs = 4;
+
   constructor() { }
+
+  expandBreadcrumbs() {
+    this.maxBreadcrumbs = undefined;
+  }
 
   ngOnInit() {
   }
