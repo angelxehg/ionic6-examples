@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-datetime',
@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatetimePage implements OnInit {
 
+  @ViewChild('customDatetime', { static: false }) datetime: HTMLIonDatetimeElement;
   constructor() { }
+
+  confirm() {
+    this.datetime.confirm();
+  }
+
+  reset() {
+    this.datetime.reset();
+  }
 
   ngOnInit() {
   }
