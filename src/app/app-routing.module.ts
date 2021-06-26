@@ -15,6 +15,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'breadcrumbs',
+    loadChildren: () => import('./pages/breadcrumbs/breadcrumbs.module').then( m => m.BreadcrumbsPageModule)
+  },
 ];
 
 @NgModule({
