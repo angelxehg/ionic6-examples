@@ -7,21 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  items: { title: string }[] = [
+  items: { name: string }[] = [
     {
-      title: 'accordion',
+      name: 'accordion',
     },
     {
-      title: 'breadcrumbs'
+      name: 'breadcrumbs'
     },
     {
-      title: 'datetime'
-    },
-    {
-      title: 'slides'
-    },
-    {
-      title: 'spinner'
+      name: 'datetime'
     },
   ];
 
