@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'breadcrumbs',
     loadChildren: () => import('./pages/breadcrumbs/breadcrumbs.module').then( m => m.BreadcrumbsPageModule)
   },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
 ];
 
 @NgModule({
