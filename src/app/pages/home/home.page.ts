@@ -7,6 +7,24 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  items: { title: string }[] = [
+    {
+      title: 'accordion',
+    },
+    {
+      title: 'breadcrumbs'
+    },
+    {
+      title: 'datetime'
+    },
+    {
+      title: 'slides'
+    },
+    {
+      title: 'spinner'
+    },
+  ];
+
+  constructor() { }
 
 }
